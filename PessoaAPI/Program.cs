@@ -2,7 +2,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PessoaAPI.Repositories; // Certifique-se de que esse namespace está correto
+using Microsoft.Extensions.Logging;
+using PessoaAPI.Repositories;
 
 namespace PessoaAPI
 {
@@ -26,6 +27,15 @@ namespace PessoaAPI
 
                         // Injeção de Dependência
                         services.AddScoped<IPessoaRepository, PessoaRepository>();
+
+                        // Configuração de CORS
+                        services.AddCors(options =>
+                        {
+                            options.AddPolicy("AllowAll",
+                                builder => builder.AllowAnyOrigin()
+                                                  .AllowAnyMethod()
+                                                  .AllowAnyHeader());
+                        });
                     });
 
                     webBuilder.Configure(app =>
@@ -45,6 +55,11 @@ namespace PessoaAPI
                         });
 
                         app.UseRouting();
+
+                        // Middleware para CORS
+                        app.UseCors("AllowAll");
+
+                        app.UseAuthorization();
 
                         app.UseEndpoints(endpoints =>
                         {

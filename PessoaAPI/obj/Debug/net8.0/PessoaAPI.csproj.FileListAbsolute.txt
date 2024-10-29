@@ -48,3 +48,4 @@ C:\Users\lucas\source\repos\PessoaAPI\PessoaAPI\obj\Debug\net8.0\refint\PessoaAP
 C:\Users\lucas\source\repos\PessoaAPI\PessoaAPI\obj\Debug\net8.0\PessoaAPI.pdb
 C:\Users\lucas\source\repos\PessoaAPI\PessoaAPI\obj\Debug\net8.0\PessoaAPI.genruntimeconfig.cache
 C:\Users\lucas\source\repos\PessoaAPI\PessoaAPI\obj\Debug\net8.0\ref\PessoaAPI.dll
+C:\Users\lucas\source\repos\PessoaAPI\PessoaAPI\obj\Debug\net8.0\PessoaAPI.sourcelink.json
