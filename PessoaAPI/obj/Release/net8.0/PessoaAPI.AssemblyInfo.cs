@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PessoaAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0e97210920a868053195658e547659344fe3216")]
 [assembly: System.Reflection.AssemblyProductAttribute("PessoaAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PessoaAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
